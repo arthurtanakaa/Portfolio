@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Meu portfólio</title>
+  <style>
+    /* Fundo degradê suave */
+    body {
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      color: #f1f1f1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: all 0.5s ease;
+    }
+
+    header, main, footer {
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    /* Cards com efeito */
+    .card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      background: #1b1b3a;
+      color: #f1f1f1;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Botões mais modernos */
+    .btn-primary {
+      background-color: #e94560;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #ff5c8a;
+      transform: scale(1.05);
+    }
+
+    .btn-secondary {
+      background-color: #0f3460;
+      border: none;
+    }
+
+    /* Badges mais suaves */
+    .badge {
+      background: #e94560 !important;
+      font-size: 0.9rem;
+      margin: 2px;
+      padding: 0.5em 0.8em;
+      border-radius: 12px;
+    }
+
+    /* Modal estilizado */
+    .modal-content {
+      background: #16213e;
+      color: #f1f1f1;
+      border-radius: 15px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    /* Ícones */
+    i {
+      color: #e94560;
+      font-size: 1.5rem;
+      margin-right: 8px;
+      transition: 0.3s;
+    }
+
+    i:hover {
+      color: #ff5c8a;
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(15px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header class="container text-center my-5">
+    <img
+      src="file:///C:/Users/TUTE/Downloads/Portfolio/Foto%20de%20perfil.jpg"
+      alt="avatar do Arthur"
+      class="rounded-circle shadow-lg"
+      width="250"
+      height="250"
+      style="object-fit: cover;"
+    />
+    <p class="lead mt-3">Eu sou Arthur_</p>
+    <h1>Eu estudo Programação</h1>
+    <p>
+      Sou estudante do ensino médio que faz estudos de programação, linguagens como HTML e
+      JavaScript. Fui classificado para o intercâmbio público do projeto Prontos Pro Mundo e
+      estou em processo de embarque.
+    </p>
+    <p>Minhas habilidades</p>
+    <div>
+      <span class="badge">HTML</span>
+      <span class="badge">Inglês</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Comunicatividade</span>
+    </div>
+  </header>
+
+  <main class="container mt-5">
+    <h2 class="mb-4 text-center">Meus projetos</h2>
+    <div class="row">
+      <!-- Projeto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img
+            src="file:///C:/Users/TUTE/Downloads/Portfolio/site-der-ada-prontos-pro-mundo.png"
+            class="card-img-top"
+            alt="Imagem do projeto Prontos Pro Mundo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Prontos Pro Mundo</h5>
+            <p class="card-text">
+              Aqui conto um pouco sobre o intercâmbio que passei e como funciona a aplicação para o programa. Em
+              breve, terei uma página exclusiva para minhas experiências vivenciadas.
+            </p>
+            <button type="button" class="btn btn-link text-decoration-none text-info" data-bs-toggle="modal" data-bs-target="#modal1">
+              Veja o projeto
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="file:///C:/Users/TUTE/Desktop/e41d0b7acde38b03892919339b855edf.webp" class="card-img-top" alt="Minha jornada na Prontos Pro Mundo" />
+          <div class="card-body">
+            <h5 class="card-title">Minha jornada na Prontos Pro Mundo</h5>
+            <p class="card-text">Este projeto fala sobre todo o meu progresso para entrar no programa.</p>
+            <button type="button" class="btn btn-link text-decoration-none text-info" data-bs-toggle="modal" data-bs-target="#modal2">
+              Veja o projeto
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="file:///C:/Users/TUTE/Desktop/OIP.webp" class="card-img-top" alt="Experiência com HTML e JavaScript" />
+          <div class="card-body">
+            <h5 class="card-title">Experiência com HTML e JavaScript</h5>
+            <p class="card-text">Aqui falo um pouco sobre minhas habilidades como programador.</p>
+            <button type="button" class="btn btn-link text-decoration-none text-info" data-bs-toggle="modal" data-bs-target="#modal3">
+              Veja o projeto
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal 1 -->
+  <div class="modal" id="modal1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Prontos Pro Mundo — Intercâmbio Público Educação</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            O projeto Prontos Pro Mundo é uma iniciativa da Secretaria da Educação do Estado de São Paulo que visa proporcionar aos
+            estudantes da rede pública estadual uma experiência internacional transformadora. Lançado em 2024, o programa é o maior
+            intercâmbio público estudantil já realizado no Brasil. Ele oferece aos alunos a oportunidade de estudar em países de
+            língua inglesa como Canadá, Reino Unido, Austrália, Nova Zelândia e Irlanda, com todos os custos cobertos pelo governo
+            estadual.
+          </p>
+          <p>
+            A seleção dos participantes começa no Ensino Fundamental, através do desempenho na prova do SARESP. Os 70 mil alunos com
+            as melhores notas são convidados a participar de um curso intensivo de inglês online pela plataforma SPEAK. Após essa
+            formação, os estudantes passam por uma prova presencial de proficiência. Quem atinge os critérios exigidos avança para a
+            etapa final do processo seletivo.
+          </p>
+          <p>
+            Os aprovados recebem suporte completo: passagens aéreas, hospedagem, alimentação, aulas no exterior, passaporte, visto e
+            até bolsa para despesas pessoais. A experiência é planejada para durar até um semestre letivo, com embarques previstos
+            para os dois semestres de 2025.
+          </p>
+          <p>
+            Mais do que um intercâmbio, o Prontos Pro Mundo representa uma mudança significativa na educação pública paulista. Com
+            investimento de cerca de R$ 120 milhões, o programa valoriza o mérito acadêmico e promove inclusão, equidade e desenvolvimento
+            de competências para o século XXI.
+          </p>
+          <img src="file:///C:/Users/TUTE/Downloads/R.jpeg" class="img-fluid w-100 rounded" alt="Imagem do intercâmbio público">
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-primary">Ver projeto ao vivo</a>
+          <a href="#" class="btn btn-secondary">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal" id="modal2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Arthur Berlofa: Meu Caminho até o Prontos Pro Mundo</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Este projeto apresenta minha trajetória pessoal até ser selecionado para o intercâmbio internacional do programa
+            <strong>Prontos Pro Mundo</strong>, promovido pela Secretaria da Educação de São Paulo.
+          </p>
+          <p>
+            Meu nome é <strong>Arthur Anttoni Tanaka Berlofa</strong>, sou estudante do ensino médio e, com dedicação ao estudo de inglês e programação, fui
+            aprovado para representar minha escola e o Brasil em uma experiência de intercâmbio educacional no exterior.
+          </p>
+          <p>
+            Participei das etapas do processo seletivo: destaquei-me no <strong>SARESP</strong>, fui aprovado no curso online da plataforma SPEAK e
+            alcancei a pontuação necessária na prova de proficiência. Minha jornada foi registrada em uma matéria publicada no portal educacional da região.
+          </p>
+          <p>
+            <strong>Matéria em destaque:</strong><br />
+            “Aluno de escola estadual de São Paulo é selecionado para intercâmbio internacional pelo programa Prontos Pro Mundo” — 
+            <a href="https://sampi.net.br/jundiai/noticias/2887209/regiao/2025/02/16-estudantes-da-regiao-sao-selecionados-para-intercambio" target="_blank" rel="noopener">educacao.sp.gov.br</a>
+          </p>
+          <p>
+            Este projeto reúne vídeos, imagens e textos que mostram minha preparação, minhas conquistas e minha expectativa para essa nova etapa.
+          </p>
+          <img src="img/projeto-2.png" class="img-fluid w-100 rounded" alt="Imagem sobre Arthur e Prontos Pro Mundo" />
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-primary">Ver projeto ao vivo</a>
+          <a href="#" class="btn btn-secondary">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal" id="modal3" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Explorando o Universo com HTML e JavaScript</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Este projeto é uma demonstração prática das minhas habilidades com <strong>HTML</strong> e <strong>JavaScript</strong>. Criei uma experiência interativa
+            inspirada no universo da astronomia, onde as pessoas usuárias podem aprender sobre constelações, eclipses e muito
+            mais.
+          </p>
+          <p>
+            Utilizei HTML para estruturar o conteúdo e JavaScript para criar interações, como transições de tela, mudanças de
+            cenário e respostas visuais a cliques do usuário. O visual é didático, acessível e envolvente.
+          </p>
+          <p>Entre os destaques técnicos, estão:</p>
+          <ul>
+            <li>Manipulação do DOM com JavaScript puro</li>
+            <li>Uso de eventos como <code>onclick</code> e <code>addEventListener</code></li>
+            <li>Design responsivo com CSS</li>
+            <li>Apresentação interativa com efeitos visuais</li>
+          </ul>
+          <p>
+            Esse projeto me ajudou a consolidar meus conhecimentos em programação web e serviu como base para outros trabalhos mais avançados.
+          </p>
+          <img src="img/projeto-3.png" alt="Projeto com JavaScript e HTML" class="img-fluid w-100 rounded" />
+        </div>
+        <div class="modal-footer">
+          <a href="https://scratch.mit.edu/projects/951732825/" class="btn btn-primary">Ver projeto ao vivo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ ATUALIZADO -->
+  <footer class="container py-5 text-center">
+    <h2>Entre em contato</h2>
+    <div class="mb-3">
+      <i class="bi bi-instagram"></i>
+      <a href="https://instagram.com/arthurshade_" target="_blank" rel="noopener" class="text-light">@arthurshade_</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
